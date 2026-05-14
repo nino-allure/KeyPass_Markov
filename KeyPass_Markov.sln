@@ -5,7 +5,7 @@ VisualStudioVersion = 18.4.11626.88 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyPass_Markov", "KeyPass_Markov\KeyPass_Markov.csproj", "{AA3C9C29-B1FE-4336-B6A8-937B4C7590BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppKeyPass", "AppKeyPass\AppKeyPass.csproj", "{68E537AC-CA57-448F-90FF-E9A32F652E51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppKeyPass_Markov", "AppKeyPass_Markov\AppKeyPass_Markov.csproj", "{B2F0DF21-9F5C-4DFE-AC47-D7C12850364F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +17,15 @@ Global
 		{AA3C9C29-B1FE-4336-B6A8-937B4C7590BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3C9C29-B1FE-4336-B6A8-937B4C7590BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3C9C29-B1FE-4336-B6A8-937B4C7590BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68E537AC-CA57-448F-90FF-E9A32F652E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68E537AC-CA57-448F-90FF-E9A32F652E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68E537AC-CA57-448F-90FF-E9A32F652E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68E537AC-CA57-448F-90FF-E9A32F652E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F0DF21-9F5C-4DFE-AC47-D7C12850364F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F0DF21-9F5C-4DFE-AC47-D7C12850364F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F0DF21-9F5C-4DFE-AC47-D7C12850364F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F0DF21-9F5C-4DFE-AC47-D7C12850364F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {348CC392-3824-46B5-8CF3-6BC7E94CEADF}
 	EndGlobalSection
 EndGlobal
