@@ -1,4 +1,5 @@
-﻿using AppKeyPass_Markov.Models;
+﻿using AppKeyPass_Markov.Contexts;
+using AppKeyPass_Markov.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,13 +30,13 @@ namespace AppKeyPass_Markov.Pages
 
         public async Task GetStorage()
         {
-            List<Storage> Storages = await.StorageContext.Get();
+            List<Storage> Storages = await StorageContext.Get();
             StorageList.Children.Clear();
             foreach (Storage Storage in Storages)
                 StorageList.Children.Add(new Elements.Item(Storage, this));
         }
 
-        private void OpenPageAdd(object sender, System.Windows.RoutedEventArgs e) =>
+        private void OpenPagesAdd(object sender, System.Windows.RoutedEventArgs e) =>
             MainWindow.init.OpenPages(new Pages.Add());
     }
 }

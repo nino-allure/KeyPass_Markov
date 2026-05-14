@@ -25,8 +25,8 @@ namespace AppKeyPass_Markov
             init = this;
             OpenPages(new Pages.Login());
         }
-        public void OpenPages(Page openPage) {
-            frame.Navigate(openPage);
+        public void OpenPages(Page OpenPage) {
+            frame.Navigate(OpenPage);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using AppKeyPass_Markov.Models;
+﻿using AppKeyPass_Markov.Contexts;
+using AppKeyPass_Markov.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace AppKeyPass_Markov.Pages
     /// </summary>
     public partial class Add : Page
     {
+        Storage ChangeStorage;
         public Add()
         {
             InitializeComponent();

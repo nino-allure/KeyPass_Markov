@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppKeyPass_Markov.Contexts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +38,7 @@ namespace AppKeyPass_Markov.Pages
                 MainWindow.init.OpenPages(new Pages.Main());
             }
         }
-        private void BtnAuth(object sender, RoutedEventArgs e)
+        private async void BtnAuth(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(tbLogin.Text))
             {
@@ -47,7 +48,7 @@ namespace AppKeyPass_Markov.Pages
             {
                 MessageBox.Show("Укажи пароль бро...");
             }
-            Auth(tbLogin.Text, tbPassword.Password);
+            await Auth(tbLogin.Text, tbPassword.Password);
         }
     }
 }

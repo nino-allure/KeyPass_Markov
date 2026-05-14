@@ -1,4 +1,6 @@
-﻿using AppKeyPass_Markov.Models;
+﻿using AppKeyPass_Markov.Contexts;
+using AppKeyPass_Markov.Models;
+using AppKeyPass_Markov.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +24,7 @@ namespace AppKeyPass_Markov.Elements
     public partial class Item : UserControl
     {
         Storage Storage;
-        Main, Main; 
+        Main Main; 
         
         public Item(Storage storage, Main main)
         {
