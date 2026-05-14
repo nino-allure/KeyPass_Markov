@@ -3,9 +3,13 @@ using KeyPass_Markov.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Pomelo.EntityFrameworkCore;
+using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
 
 namespace KeyPass_Markov.Controllers
 {
+    [RouteAttribute("/storage")]   
+    
     public class StorageController : Controller
     {
         private DatabaseManager databaseManager;
@@ -13,7 +17,7 @@ namespace KeyPass_Markov.Controllers
             this.databaseManager = new DatabaseManager();
         [Route("get")]
         [HttpGet]
-        public ActionReult Get([FromHeader] string token)
+        public ActionResult Get([FromHeader] string token)
         {
             try
             {
@@ -95,7 +99,7 @@ namespace KeyPass_Markov.Controllers
             {
                 int? IdUser = JwtToken.GetUserIdFromToken(token);
                 Storage? Storage = databaseManager.Storages
-                    .Where(x => x.Id == id && User.Identity == IdUser)
+                    .Where(x => x.Id == id && x.User.Id == IdUser)
                     .FirstOrDefault();
                 if (IdUser == null)
                     return StatusCode(401);

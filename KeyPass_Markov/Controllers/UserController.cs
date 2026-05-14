@@ -1,8 +1,5 @@
-﻿using System.Diagnostics.Eventing.Reader;
-using KeyPass_Markov.Classes;
+﻿using KeyPass_Markov.Classes;
 using KeyPass_Markov.Models;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 
 

@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KeyPass_Markov.Classes
 {
-    public class DatabaseManager
+    public class DatabaseManager : DbContext
     {
-        public DbSet<Storage> Storages { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Storage> Storages{ get; set; }
+        public DbSet<User> Users{ get; set; }
         public DatabaseManager() =>
             Database.EnsureCreated();
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
