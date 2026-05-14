@@ -23,7 +23,7 @@ namespace AppKeyPass_Markov.Pages
     public partial class Add : Page
     {
         Storage ChangeStorage;
-        public Add()
+        public Add(Storage storage = null)
         {
             InitializeComponent();
             ChangeStorage = storage;

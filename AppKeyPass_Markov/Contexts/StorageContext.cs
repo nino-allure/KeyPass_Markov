@@ -12,7 +12,7 @@ namespace AppKeyPass_Markov.Contexts
 {
     public class StorageContext
     {
-        static string url = "https://localhost:7074/storage/";
+        static string url = "https://localhost:7163/storage/";
 
         public static async Task<List<Storage>?> Get()
         {
